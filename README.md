@@ -1,3 +1,3 @@
-# flutter_application_1
+# Currency Converter App using Flutter
 
-A new Flutter project.
+A simple flutter project that converts USD to INR in flutter.
