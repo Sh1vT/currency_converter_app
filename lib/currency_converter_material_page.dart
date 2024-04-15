@@ -1,19 +1,5 @@
 import 'package:flutter/material.dart';
 
-//The state issue:
-//1. Value of calculator will not update because it is defined in Stateless Widget
-//2. To make it update, we need a Stateful Widget
-//3. Now after making a stateful widget named CurrencyConverterMaterialPage{}, it requires a 
-//method called createState(), so we write that
-//4. This createState() method is of State type, and requires to return a state, but we cant return
-//a state because it is an abstract class.
-//5. So we return a child class of the state class, which has extended state class. This child class
-//is _CurrencyConverterMaterialPageState.
-//6. _CurrencyConverterMaterialPageState requires a concrete implementation of state.build, basically
-//the build function. So we make it here.
-//7. Now we can copy the entire build function of the stateless widget inside here and remove the 
-//stateless widget altogether
-
 class CurrencyConverterMaterialPage extends StatefulWidget {
   const CurrencyConverterMaterialPage({super.key});
 
@@ -113,14 +99,6 @@ class _CurrencyConverterMaterialPageState extends State{
   }
 }
 
-// class CurrencyConverterMaterialPageUnchanged extends StatelessWidget{
-//   const CurrencyConverterMaterialPageUnchanged({super.key});
 
-
-//   @override
-//   Widget build(BuildContext context){
-    
-//   }
-// }
 
 
